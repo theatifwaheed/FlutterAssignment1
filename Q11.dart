@@ -9,4 +9,13 @@
       :> Is student is allowed to sit in 
          exam or not.
 */
-void main() {}
+void main() {
+  int classHeld = 40, classAttend = 30;
+  double percent = (classAttend / classHeld) * 100;
+  print("Percentage of Attendance: $percent");
+  if (percent > 75) {
+    print("You Are Allowed to Sit in Exams");
+  } else {
+    print("You are NOT Allowed to sit in Exams. Below 75% Attendance.");
+  }
+}
